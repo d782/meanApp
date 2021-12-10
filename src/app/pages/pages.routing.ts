@@ -10,8 +10,7 @@ export const routes: Routes = [
   children:[
     {path:'',component:DashboardComponent},
     {path:'progress',component:ProgressComponent},
-    {path:'graphic1',component:Graphics1Component},
-    {path:'',pathMatch:'full',redirectTo:'dashboard'},    
+    {path:'graphic1',component:Graphics1Component},    
   ]
   },
 ]
