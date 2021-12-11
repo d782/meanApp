@@ -9,6 +9,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 import { NgChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NgChartsModule } from 'ng2-charts';
     Graphics1Component,
     PagesComponent,
     DashboardComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,

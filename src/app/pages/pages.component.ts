@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../services/settings.service';
+
+
 
 @Component({
   selector: 'app-pages',
@@ -7,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class PagesComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(private settings:SettingsService) { }
 
   ngOnInit(): void {
+    //./assets/css/colors/default-dark.css
+    this.settings.getColor();
   }
+  
 
 }
